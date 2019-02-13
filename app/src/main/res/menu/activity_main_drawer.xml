@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+
+
+            android:title="Puzzles">
+            <menu>
+                <item
+                    android:icon="@mipmap/who"
+                    android:id="@+id/idItem_who"
+                    android:title="Who Am I"
+                    />
+                <item
+                    android:icon="@mipmap/what"
+                    android:id="@+id/idItem_what"
+                    android:title="What Is"
+                    />
+                <item
+                    android:icon="@mipmap/braine"
+                    android:id="@+id/idItem_brain"
+                    android:title="Brain Teasers"
+                    />
+
+            </menu>
+        </item>
+
+        <item
+
+
+            android:title="Games">
+
+            <menu>
+                <item
+                    android:icon="@mipmap/hang"
+                    android:id="@+id/idItem_hang"
+                    android:title="Hang Man"
+                    />
+                <item
+                    android:icon="@mipmap/numb"
+                    android:id="@+id/idItem_numb"
+                    android:title="Number Guess"
+                    />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/idItem3"
+            android:icon="@mipmap/calendar_60"
+            android:title="Diary"/>
+    </group>
+    <item android:title="Objects">
+        <menu>
+            <item
+                android:id="@+id/idItem4"
+                android:icon="@mipmap/hexa"
+                android:title="Shapes"/>
+        </menu>
+    </item>
+
+    <item android:title="Learn">
+        <menu>
+            <item
+                android:id="@+id/idItem5"
+                android:icon="@mipmap/tonguetw"
+                android:title="Tongue Twister"/>
+            <item
+                android:id="@+id/idItem6"
+                android:icon="@mipmap/colorco"
+                android:title="Colors"/>
+        </menu>
+    </item>
+
+</menu>

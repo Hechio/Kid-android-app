@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#66ff99">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_diary"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        />
+
+    <ImageButton
+        android:id="@+id/diary_delete"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#66ff99"
+        android:layout_below="@+id/toolbar_diary"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@mipmap/trash" />
+
+    <ImageButton
+        android:id="@+id/diary_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#66ff99"
+        android:layout_alignTop="@+id/diary_delete"
+        android:layout_marginEnd="26dp"
+        app:srcCompat="@mipmap/check_circle_07"
+        android:layout_alignBottom="@+id/diary_delete" />
+
+    <TextView
+        android:id="@+id/delete"
+        android:paddingTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/diary_delete"
+        android:layout_below="@+id/diary_delete"
+        android:layout_marginTop="15dp"
+        android:text="Delete" />
+
+    <TextView
+        android:id="@+id/save"
+        android:paddingTop="0dp"
+        android:layout_marginRight="1in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/delete"
+        android:layout_alignEnd="@+id/diary_save"
+        android:layout_marginEnd="12dp"
+        android:text="Save" />
+
+    <EditText
+        android:id="@+id/note"
+        android:paddingTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Note" />
+
+
+</RelativeLayout>

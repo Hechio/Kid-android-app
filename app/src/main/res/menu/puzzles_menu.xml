@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/whatis" android:title="What is puzzles"/>
+    <item android:id="@+id/whoam" android:title="Who am I puzzles"/>
+    <item android:id="@+id/brain" android:title="Brain Teasers"/>
+</menu>

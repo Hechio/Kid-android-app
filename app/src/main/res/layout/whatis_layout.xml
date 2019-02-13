@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#41a317"
+    android:label="What Is Puzzles"
+    android:name="puzzle_who">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_what"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        />
+
+    <TextView
+        android:id="@+id/who_puzzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar_what"
+        android:textColor="#f7e7ce"
+        android:textSize="20dp"
+        android:text="What Is Puzzles"
+        tools:text="What Is Puzzles" />
+
+    <TextSwitcher
+        android:id="@+id/what_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/who_puzzle"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" >
+
+
+
+    </TextSwitcher>
+    <EditText
+        android:id="@+id/what_answer"
+        android:layout_marginTop="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/what_switcher"
+        android:inputType="textCapSentences"
+        android:ems="10"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_what_puz"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_games"
+        android:layout_weight="0.48"
+        android:text="Submit"
+        tools:text="Submit"
+        android:layout_below="@+id/what_answer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <TextView
+        android:id="@+id/what_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_what_puz"
+        android:layout_marginTop="85dp"
+        android:text=""
+        android:textSize="22dp"
+        android:textAlignment="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/What_prev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_games"
+            android:layout_weight="0.48"
+            android:text="Previous"
+
+            android:layout_marginLeft="10dp"
+            tools:text="Previous" />
+
+        <Button
+            android:id="@+id/What_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+
+            android:background="@drawable/button_games"
+            android:text="Next"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            tools:text="Next" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

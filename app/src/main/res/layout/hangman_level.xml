@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#41a317"
+    android:label="Hang Man">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_hangman_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_hangman_level"
+        android:text="Ready to have fun!"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:fontFamily="serif-monospace"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:id="@+id/hang_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ready"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#0000ff"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        android:text="" />
+
+    <Button
+        android:id="@+id/hang1_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/hang_answer"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="41dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hang1_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:text="FeedBack" />
+
+
+
+
+
+
+</RelativeLayout>
